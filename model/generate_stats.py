@@ -1,24 +1,18 @@
-import numpy
+import pickle
 import os
-import re
 import math
 from lxml import etree
 import nltk
+from utils import normalise
 
 
-def zero_digits(s):
-    """
-    Replace every digit in a string by a zero.
-    """
-    return re.sub('\d', '0', s)
+def save_obj(obj, name ):
+    with open( name + '.pkl', 'wb') as f:
+        pickle.dump(obj, f, 0)
 
-def normalise(word, lower=True, zeros=True):
-    if lower:
-        word=word.lower()
-    if zeros:
-        word=zero_digits(word)
-    return word
-
+def load_obj(name ):
+    with open( name + '.pkl', 'rb') as f:
+        return pickle.load(f)
 
 class tfidf:
   def __init__(self):
@@ -45,17 +39,12 @@ class tfidf:
   def get_idf(self):
     """Print dictionary"""
     total_doc=len(self.documents)
-    print total_doc
-    #for key,items in self.documents:
-    #    print key,items
     for items in self.corpus_dict:
         count =0
         for id, docs in self.documents:
             if docs.get(items,0) != 0:
-                count = count +1
-        print count
+                count += 1
         self.idf[items] = math.log(total_doc+1/(count + 1.0))
-    print self.idf
 
   def print_dictionary(self):
     """Print dictionary"""
@@ -68,32 +57,35 @@ class tfidf:
     """"Get TFIDF"""
     times=0
 
-  def similarities(self, list_of_words):
-    """Returns a list of all the [docname, similarity_score] pairs relative to a list of words."""
-
-    # building the query dictionary
-    query_dict = {}
-    for w in list_of_words:
-      query_dict[w] = query_dict.get(w, 0.0) + 1.0
-
-    # normalizing the query
-    length = float(len(list_of_words))
-    for k in query_dict:
-      query_dict[k] = query_dict[k] / length
-
-    # computing the list of similarities
-    sims = []
-    for doc in self.documents:
-      score = 0.0
-      doc_dict = doc[1]
-      for k in query_dict:
-        if k in doc_dict:
-          score += (query_dict[k] / self.corpus_dict[k]) + (doc_dict[k] / self.corpus_dict[k])
-      sims.append([doc[0], score])
-
-    return sims
+  def save(self,path):
+      save_obj(self.documents, path + 'documents')
+      save_obj(self.idf, path + 'idf')
 
 
+#  def similarities(self, list_of_words):
+#    """Returns a list of all the [docname, similarity_score] pairs relative to a list of words."""
+#
+#    # building the query dictionary
+#    query_dict = {}
+#    for w in list_of_words:
+#      query_dict[w] = query_dict.get(w, 0.0) + 1.0
+#
+#    # normalizing the query
+#    length = float(len(list_of_words))
+#    for k in query_dict:
+#      query_dict[k] = query_dict[k] / length
+#
+#    # computing the list of similarities
+#    sims = []
+#    for doc in self.documents:
+#      score = 0.0
+#      doc_dict = doc[1]
+#      for k in query_dict:
+#        if k in doc_dict:
+#          score += (query_dict[k] / self.corpus_dict[k]) + (doc_dict[k] / self.corpus_dict[k])
+#      sims.append([doc[0], score])
+#
+#    return sims
 
 
 def parseXml(textfolder = "data/scienceie2017_train/train/"):
@@ -125,7 +117,7 @@ def parseXml(textfolder = "data/scienceie2017_train/train/"):
         #print(notags)
         document=[]
         for tokens in nltk.word_tokenize(unicode(notags,"utf-8")):
-            document.append(normalise(tokens))
+            document.append(normalise(tokens, True, True ))
         print 'done'
         list_to_return.append(document)
     return list_to_return
@@ -133,10 +125,11 @@ def parseXml(textfolder = "data/scienceie2017_train/train/"):
 
 if __name__ == '__main__':
     table = tfidf()
-    a=parseXml('data/scienceie2017_dev/dev/')
-    #b=parseXml('data/scienceie2017_train/train2/')
-    for i,items in enumerate(a):
+    a = parseXml('data/scienceie2017_train/train2/')
+    b = parseXml('data/scienceie2017_dev/dev/')
+    for i,items in enumerate(a+b):
         table.addDocument(str(i),items)
     table.get_idf()
-    #table.print_dictionary()
-
+    if not os.path.exists('data/stats/'):
+        os.makedirs('data/stats/')
+    table.save('data/stats/')
