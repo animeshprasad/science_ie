@@ -1,15 +1,31 @@
 import numpy
 import os
-import io
-import nltk
+import re
+import math
 from lxml import etree
 import nltk
+
+
+def zero_digits(s):
+    """
+    Replace every digit in a string by a zero.
+    """
+    return re.sub('\d', '0', s)
+
+def normalise(word, lower=True, zeros=True):
+    if lower:
+        word=word.lower()
+    if zeros:
+        word=zero_digits(word)
+    return word
+
 
 class tfidf:
   def __init__(self):
     self.weighted = False
     self.documents = []
     self.corpus_dict = {}
+    self.idf = {}
 
   def addDocument(self, doc_name, list_of_words):
     # building a dictionary
@@ -25,6 +41,32 @@ class tfidf:
 
     # add the normalized document to the corpus
     self.documents.append([doc_name, doc_dict])
+
+  def get_idf(self):
+    """Print dictionary"""
+    total_doc=len(self.documents)
+    print total_doc
+    #for key,items in self.documents:
+    #    print key,items
+    for items in self.corpus_dict:
+        count =0
+        for id, docs in self.documents:
+            if docs.get(items,0) != 0:
+                count = count +1
+        print count
+        self.idf[items] = math.log(total_doc+1/(count + 1.0))
+    print self.idf
+
+  def print_dictionary(self):
+    """Print dictionary"""
+    for key,items in self.documents:
+        print key,items
+    for items in self.corpus_dict:
+        print items
+
+  def get_tfidf(self,str):
+    """"Get TFIDF"""
+    times=0
 
   def similarities(self, list_of_words):
     """Returns a list of all the [docname, similarity_score] pairs relative to a list of words."""
@@ -53,13 +95,13 @@ class tfidf:
 
 
 
+
 def parseXml(textfolder = "data/scienceie2017_train/train/"):
     '''
     Read .xml files
     :param textfolder:
     :return:
     '''
-
     flist = os.listdir(textfolder)
     list_to_return=[]
     for f in flist:
@@ -81,19 +123,20 @@ def parseXml(textfolder = "data/scienceie2017_train/train/"):
         #for items in root.findall('{http://www.elsevier.com/xml/xocs/dtd}normalized-srctitle'):
         #    print items.text
         #print(notags)
+        document=[]
         for tokens in nltk.word_tokenize(unicode(notags,"utf-8")):
-            list_to_return.append(tokens)
+            document.append(normalise(tokens))
         print 'done'
-
+        list_to_return.append(document)
     return list_to_return
 
 
 if __name__ == '__main__':
     table = tfidf()
     a=parseXml('data/scienceie2017_dev/dev/')
-    b=a
     #b=parseXml('data/scienceie2017_train/train2/')
-    for i,items in enumerate(a+b):
+    for i,items in enumerate(a):
         table.addDocument(str(i),items)
+    table.get_idf()
+    #table.print_dictionary()
 
-    print table.similarities(['Co', 'Ni'])
