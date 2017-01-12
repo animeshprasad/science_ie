@@ -185,7 +185,7 @@ test_data = prepare_dataset(
 ##Write to CRFPP Feature File
 write_crfpp_feat_file(train_data,'train')
 write_crfpp_feat_file(dev_data,'dev')
-write_crfpp_feat_file(train_data+dev_data,'dev')
+write_crfpp_feat_file(train_data+dev_data,'traindev')
 write_crfpp_feat_file(test_data,'test')
 
 print "%i / %i / %i sentences in train / dev / test." % (
