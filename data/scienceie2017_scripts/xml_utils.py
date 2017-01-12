@@ -1,8 +1,11 @@
 #!/usr/bin/python3
-
+# -*- coding: utf-8 -*-
 import xml.sax
 import collections
 import os
+import sys
+reload(sys)
+sys.setdefaultencoding('utf8')
 
 class PubHandler(xml.sax.ContentHandler):
    def __init__(self):
@@ -125,7 +128,7 @@ class PubHandler(xml.sax.ContentHandler):
            self.textbuilder_bib.append(content)
 
 
-def parseXML(fpath="papers_with_highlights/S2352220815001534.xml"):
+def parseXML(fpath="papers_with_highlights/S2352220815001534.xml", head=True, abstract=False, citations=False):
     '''
     Parse XML files to retrieve full publication text
     :param fpath: path to file
@@ -143,12 +146,20 @@ def parseXML(fpath="papers_with_highlights/S2352220815001534.xml"):
     parser.parse(fpath)
 
     # access the different parts of the publication
-    print("Title:", Handler.title)
-    for h in Handler.highlights:
-        print("Highlight:", h)
-    print("Abstract:", Handler.abstract)
-    for n, t in Handler.text.items():
-        print("Text:", t)
+    if head:
+        return Handler.title
+    if abstract:
+        return Handler.abstract
+    if citations:
+        return Handler.bib_entries
+
+    #TODO: Not all files have citations
+    #print("Title:", Handler.title)
+    #for h in Handler.highlights:
+    #    print("Highlight:", h)
+    #print("Abstract:", Handler.abstract)
+    #for n, t in Handler.text.items():
+    #    print("Text:", t)
 
 
 def parseXMLAll(dirpath = "papers_with_highlights/"):

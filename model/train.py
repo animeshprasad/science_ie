@@ -8,11 +8,12 @@ from collections import OrderedDict
 from utils import create_input
 import loader
 
-from utils import models_path, evaluate, eval_script, eval_temp
+from utils import models_path, evaluate, eval_temp
 from loader import word_mapping, char_mapping, tag_mapping
 from loader import prepare_dataset
 from loader import augment_with_pretrained
 from model import Model
+from features import write_crfpp_feat_file
 
 # Read parameters from command line
 optparser = optparse.OptionParser()
@@ -29,11 +30,11 @@ optparser.add_option(
     help="Test set location"
 )
 optparser.add_option(
-    "-l", "--lower", default="0",
+    "-l", "--lower", default="1",
     type='int', help="Lowercase words (this will not affect character inputs)"
 )
 optparser.add_option(
-    "-z", "--zeros", default="0",
+    "-z", "--zeros", default="1",
     type='int', help="Replace digits with 0"
 )
 optparser.add_option(
@@ -77,12 +78,8 @@ optparser.add_option(
     type='int', help="Use POS features (0 to disable)"
 )
 optparser.add_option(
-    "-j", "--use_gaz", default="0",
-    type='int', help="Use Gazetteer features (0 to disable)"
-)
-optparser.add_option(
-    "-k", "--use_tfidf", default="0",
-    type='int', help="Use TFIDF (0 to disable)"
+    "-j", "--use_att", default="0",
+    type='int', help="Use Attention (0 to disable)"
 )
 optparser.add_option(
     "-f", "--crf", default="1",
@@ -116,8 +113,7 @@ parameters['pre_emb'] = opts.pre_emb
 parameters['all_emb'] = opts.all_emb == 1
 parameters['cap_dim'] = opts.cap_dim
 parameters['use_pos'] = opts.use_pos
-parameters['use_gaz'] = opts.use_gaz
-parameters['use_tfidf'] = opts.use_tfidf
+parameters['use_att'] = opts.use_att
 parameters['crf'] = opts.crf == 1
 parameters['dropout'] = opts.dropout
 parameters['lr_method'] = opts.lr_method
@@ -146,15 +142,11 @@ print "Model location: %s" % model.model_path
 lower = parameters['lower']
 zeros = parameters['zeros']
 pos = parameters['use_pos']
-gaz = parameters['use_gaz']
-tfidf = parameters['use_tfidf']
-
 
 # Load sentences
 train_sentences = loader.load_sentences(opts.train)
 dev_sentences = loader.load_sentences(opts.dev)
 test_sentences = loader.load_sentences(opts.test)
-
 
 
 # Create a dictionary / mapping of words
@@ -189,14 +181,17 @@ test_data = prepare_dataset(
     test_sentences, word_to_id, char_to_id, tag_to_id, lower, zeros
 )
 
-#print '\n'
-#print train_data[0]['gaz']
-#from features import pos_feature
-#print pos_feature(train_data[0]['str_words'])
-#exit()
+
+##Write to CRFPP Feature File
+write_crfpp_feat_file(train_data,'train')
+write_crfpp_feat_file(dev_data,'dev')
+write_crfpp_feat_file(train_data+dev_data,'dev')
+write_crfpp_feat_file(test_data,'test')
 
 print "%i / %i / %i sentences in train / dev / test." % (
     len(train_data), len(dev_data), len(test_data))
+
+exit()
 
 # Save the mappings to disk
 print 'Saving the mappings to disk...'
@@ -232,9 +227,9 @@ for epoch in xrange(n_epochs):
             print "%i, cost average: %f" % (i, np.mean(epoch_costs[-50:]))
         if count % freq_eval == 0:
             dev_score = evaluate(parameters, f_eval, dev_sentences,
-                                 dev_data, id_to_tag, dico_tags)
+                                 dev_data, id_to_tag)
             test_score = evaluate(parameters, f_eval, test_sentences,
-                                  test_data, id_to_tag, dico_tags)
+                                  test_data, id_to_tag)
             print "Score on dev: %.5f" % dev_score
             print "Score on test: %.5f" % test_score
             if dev_score > best_dev:

@@ -65,7 +65,7 @@ with codecs.open(opts.input, 'r', 'utf-8') as f_input:
                 line = zero_digits(line)
             # Prepare input
             sentence = prepare_sentence(words, word_to_id, char_to_id,
-                                        lower=parameters['lower'])
+                                        lower=parameters['lower'], zeros=parameters['zeros'])
             input = create_input(sentence, parameters, False)
             # Decoding
             if parameters['crf']:
@@ -73,9 +73,6 @@ with codecs.open(opts.input, 'r', 'utf-8') as f_input:
             else:
                 y_preds = f_eval(*input).argmax(axis=1)
             y_preds = [model.id_to_tag[y_pred] for y_pred in y_preds]
-            # Output tags in the IOB2 format
-            if parameters['tag_scheme'] == 'iobes':
-                y_preds = iobes_iob(y_preds)
             # Write tags
             assert len(y_preds) == len(words)
             f_output.write('%s\n' % ' '.join('%s%s%s' % (w, opts.delimiter, y)

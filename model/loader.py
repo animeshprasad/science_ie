@@ -1,9 +1,8 @@
 import os
-import re
 import codecs
-import unicodedata
 from utils import create_dico, create_mapping, normalise
-from features import pos_feature, gaz_binary
+from features import pos_feature
+import nltk
 
 
 def load_sentences(path):
@@ -96,14 +95,14 @@ def prepare_sentence(str_words, word_to_id, char_to_id, lower, zeros):
              for w in str_words]
     caps = [cap_feature(w) for w in str_words]
     pos_tags = pos_feature(str_words)
-    gaz = [gaz_binary(w) for w in str_words]
+    #att = [normalise(tokens, True, True) for tokens in nltk.word_tokenize(unicode(notags, "utf-8"))]
     return {
         'str_words': str_words,
         'words': words,
         'chars': chars,
         'caps': caps,
         'pos_tags': pos_tags,
-        'gaz': gaz,
+        #'att': att,
     }
 
 
@@ -125,7 +124,7 @@ def prepare_dataset(sentences, word_to_id, char_to_id, tag_to_id, lower, zeros):
         caps = [cap_feature(w) for w in str_words]
         tags = [tag_to_id[w[-1]] for w in s]
         pos_tags = pos_feature(str_words)
-        gaz = [gaz_binary(w) for w in str_words]
+        #att = [normalise(tokens, True, True ) for tokens in nltk.word_tokenize(unicode(notags,"utf-8"))]
         data.append({
             'str_words': str_words,
             'words': words,
@@ -133,7 +132,7 @@ def prepare_dataset(sentences, word_to_id, char_to_id, tag_to_id, lower, zeros):
             'caps': caps,
             'tags': tags,
             'pos_tags': pos_tags,
-            'gaz': gaz,
+            #'att': att,
         })
     return data
 
@@ -147,18 +146,17 @@ def augment_with_pretrained(dictionary, ext_emb_path, words, lower, zeros):
     """
     print 'Loading pretrained embeddings from %s...' % ext_emb_path
     assert os.path.isfile(ext_emb_path)
-    
-	
-	# Load pretrained embeddings from file
+
+    # Load pretrained embeddings from file
     count = 0
     pretrained = set()
     for line in open(ext_emb_path, 'r'):
         line = line.decode('utf8', 'ignore')
         try:
             #Embeeding size should be greater than 20
-#            if line.rstrip()=='' or len(line.rstrip().split()) < 20:
-#                print line
-#            else:
+            if line.rstrip()=='' or len(line.rstrip().split()) < 20:
+                print line
+            else:
                 pretrained.add(line.rstrip().split()[0].strip())
                 count = count + 1
         except:

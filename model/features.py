@@ -1,6 +1,7 @@
 #!/usr/bin/env python
 # -*- coding: utf-8 -*-
 import nltk
+import re
 
 def pos_feature(tokens):
     """
@@ -54,8 +55,8 @@ def pos_feature(tokens):
     '--':43,
     '.':44,
     ':':45,
+    '#':46,
     }
-    count = 0
     return [pos_dict[a] for (w, a) in nltk.pos_tag(tokens)]
 
 
@@ -84,10 +85,29 @@ def non_ascii(tokens):
     return binary_to_int(all([False if ord(x) < 128 else True for x in tokens]))
 
 
-#def domain(tokens):
-#    return [pos_dict[a] for (w, a) in nltk.pos_tag(tokens)]
+def alphanumeric(tokens):
+    return True if re.match('[a-zA-Z]+$', tokens) and re.match('[0-9]+$', tokens) else False
 
 
 def gaz_binary(tokens):
-    return [contains_hyphen(tokens),in_quotes(tokens),contains_maths(tokens),non_ascii(tokens)]
+    return str(contains_hyphen(tokens))+ ' ' +str(in_quotes(tokens))+ ' ' +str(contains_maths(tokens))+ \
+           ' ' +str(non_ascii(tokens))+ ' ' +str(alphanumeric(tokens))+ ' ' +str(tokens.isalnum())
 
+
+def write_crfpp_feat_file(feat_list,filename):
+    #TODO: Replacement coerce str to int
+    w_stream=open(filename,'w')
+    for item in feat_list:
+        for i,items in enumerate(item['str_words']):
+            binary_feats=gaz_binary(items)
+            feat_s=items + ' ' + items[0] + ' ' + items[-1] + \
+            ' ' + items[:min(2,len(items))] + ' ' + items[max(-2,-len(items)):] + \
+            ' ' + items[:min(3, len(items) )] + ' ' + items[max(-3, -len(
+                    items)):] +\
+                ' ' + items[:min(4, len(items))] + ' ' + items[max(-4, -len(
+                    items)):] + \
+                   ' ' + str(item['words'][i]) + ' ' + str(item['caps'][i]) + ' ' + str(item['pos_tags'][i]) +\
+                   ' ' + binary_feats +' ' + str(item['tags'][i])
+            w_stream.write(feat_s.encode('utf-8'))
+            w_stream.write('\n'.encode('utf-8'))
+        w_stream.write('\n'.encode('utf-8'))

@@ -1,6 +1,5 @@
 import os
 import re
-import codecs
 import numpy as np
 #import theano
 
@@ -8,7 +7,6 @@ import numpy as np
 models_path = "./models"
 eval_path = "./evaluation"
 eval_temp = os.path.join(eval_path, "temp")
-eval_script = os.path.join(eval_path, "conlleval")
 
 
 def get_name(parameters):
@@ -150,20 +148,21 @@ def create_input(data, parameters, add_label, singletons=None):
         input.append(char_pos)
     if parameters['cap_dim']:
         input.append(caps)
+    if parameters['use_pos']:
+        input.append(data['pos_tags'])
+    if parameters['use_att']:
+        input.append(data['att'])
     if add_label:
         input.append(data['tags'])
     return input
 
 
 def evaluate(parameters, f_eval, raw_sentences, parsed_sentences,
-             id_to_tag, dictionary_tags):
+             id_to_tag):
     """
     Evaluate current model based on F1.
     """
-    n_tags = len(id_to_tag)
-    predictions = []
-    count = np.zeros((n_tags, n_tags), dtype=np.int32)
-
+    #TODO: Use evaluation scripts
     for raw_sentence, data in zip(raw_sentences, parsed_sentences):
         input = create_input(data, parameters, False)
         if parameters['crf']:
