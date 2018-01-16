@@ -147,19 +147,14 @@ def parseXML(fpath="papers_with_highlights/S2352220815001534.xml", head=True, ab
 
     # access the different parts of the publication
     if head:
-        return Handler.title
+        return Handler.title #+ ' '.join(Handler.keyphrases)
     if abstract:
         return Handler.abstract
     if citations:
-        return Handler.bib_entries
+        return ' '.join(Handler.bib_entries).replace('\n', ' ')
 
     #TODO: Not all files have citations
-    #print("Title:", Handler.title)
-    #for h in Handler.highlights:
-    #    print("Highlight:", h)
-    #print("Abstract:", Handler.abstract)
-    #for n, t in Handler.text.items():
-    #    print("Text:", t)
+
 
 
 def parseXMLAll(dirpath = "papers_with_highlights/"):

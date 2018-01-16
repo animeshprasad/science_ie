@@ -1,7 +1,7 @@
 import os
 import re
 import numpy as np
-#import theano
+import theano
 
 
 models_path = "./models"

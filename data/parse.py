@@ -62,6 +62,16 @@ def parseAnnTest(textfolder = "data/scienceie2017_test/test/"):
             f_out.write(unicode(str(int(label[length])),"utf-8")+"\n")
             length = length + len(lines)
 
+    for f in flist:
+        if f[-1] != 'l':
+            continue
+        f_xml1 = parseXML(textfolder + f, True, False, False)
+        f_xml2 = parseXML(textfolder + f, False, True, False)
+        f_xml3 = parseXML(textfolder + f, False, False, True)
+        f_out = io.open(os.path.join(textfolder, "../temp/" + f.replace(".xml", ".out")), "w", encoding='utf-8')
+        f_out.write(unicode(str(f_xml1), "utf-8") + "\n")
+        f_out.write(unicode(str(f_xml2), "utf-8") + "\n")
+        f_out.write(unicode(str(f_xml3), "utf-8") + "\n")
 
 
 
@@ -126,30 +136,38 @@ def parseAnn(textfolder = "data/scienceie2017_train/train/"):
     for f in flist:
         if f[-1] != 'l':
             continue
-        f_xml = parseXML(textfolder+f, True, False, False)
+        f_xml1 = parseXML(textfolder+f, True, False, False)
+        f_xml2 = parseXML(textfolder + f, False, True, False)
+        f_xml3 = parseXML(textfolder + f, False, False, True)
         f_out = io.open(os.path.join(textfolder, "../temp/" + f.replace(".xml", ".out")), "w", encoding='utf-8')
-        f_out.write(unicode(str(f_xml), "utf-8") + "\n")
+        f_out.write(unicode(str(f_xml1), "utf-8") + "\n")
+        f_out.write(unicode(str(f_xml2), "utf-8") + "\n")
+        f_out.write(unicode(str(f_xml3), "utf-8") + "\n")
 
 
 if __name__ == '__main__':
-    if not os.path.exists('data/scienceie2017_dev/feat/'):
-        os.makedirs('data/scienceie2017_dev/feat/')
-    if not os.path.exists('data/scienceie2017_train/feat/'):
-        os.makedirs('data/scienceie2017_train/feat/')
-    if not os.path.exists('data/scienceie2017_dev/temp/'):
-        os.makedirs('data/scienceie2017_dev/temp/')
-    if not os.path.exists('data/scienceie2017_train/temp/'):
-        os.makedirs('data/scienceie2017_train/temp/')
+#    if not os.path.exists('data/scienceie2017_dev/feat/'):
+#        os.makedirs('data/scienceie2017_dev/feat/')
+#    if not os.path.exists('data/scienceie2017_train/feat/'):
+#        os.makedirs('data/scienceie2017_train/feat/')
+#    if not os.path.exists('data/scienceie2017_dev/temp/'):
+#        os.makedirs('data/scienceie2017_dev/temp/')
+#    if not os.path.exists('data/scienceie2017_train/temp/'):
+#        os.makedirs('data/scienceie2017_train/temp/')
 
     parseAnn('data/scienceie2017_dev/dev/')
     parseAnn('data/scienceie2017_train/train2/')
     joinFiles('data/scienceie2017_dev/feat/')
     joinFiles('data/scienceie2017_train/feat/')
 
-    if not os.path.exists('data/scienceie2017_test_unlabelled/feat/'):
-        os.makedirs('data/scienceie2017_test_unlabelled/feat/')
-    if not os.path.exists('data/scienceie2017_test_unlabelled/temp/'):
-        os.makedirs('data/scienceie2017_test_unlabelled/temp/')
+#    if not os.path.exists('data/scienceie2017_test_unlabelled/feat/'):
+#        os.makedirs('data/scienceie2017_test_unlabelled/feat/')
+#    if not os.path.exists('data/scienceie2017_test_unlabelled/temp/'):
+#        os.makedirs('data/scienceie2017_test_unlabelled/temp/')
 
     parseAnnTest('data/scienceie2017_test_unlabelled/test/')
     joinFiles('data/scienceie2017_test_unlabelled/feat/')
+
+    joinFiles('data/scienceie2017_train/temp/')
+    joinFiles('data/scienceie2017_dev/temp/')
+    joinFiles('data/scienceie2017_test_unlabelled/temp/')

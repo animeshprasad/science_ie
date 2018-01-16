@@ -1,5 +1,5 @@
-#import theano
-#import theano.tensor as T
+import theano
+import theano.tensor as T
 from utils import shared
 
 

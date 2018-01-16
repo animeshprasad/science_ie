@@ -1,0 +1,1375 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="695bcf9b-edbc-4ec4-abdf-d206c876d5f5" name="Default" comment="">
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/data/Animesh-1-output/1704.00514.pdf" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/data/scienceie2017_dev/final/Archive.zip" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/data/scienceie2017_test_unlabelled/final/Archive.zip" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/data/stats/vocab.gz" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.gitignore" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/ScienceIE.iml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/misc.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/modules.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/vcs.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/data/Animesh-1-output/metadata" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/data/Animesh-1-output/scores.txt" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/data/classes/dev/feats1" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/data/classes/dev/feats2" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/data/classes/dev/feats3" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/data/classes/train/feats1" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/data/classes/train/feats2" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/data/classes/train/feats3" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/data/evaluate.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/data/parse2.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/data/scienceie2017_dev/final/S0003491613001516.ann" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/data/scienceie2017_dev/final/S0003491615001839.ann" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/data/scienceie2017_dev/final/S0009261408017028.ann" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/data/scienceie2017_dev/final/S0009261413004612.ann" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/data/scienceie2017_dev/final/S0009261414000372.ann" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/data/scienceie2017_dev/final/S0009261415001517.ann" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/data/scienceie2017_dev/final/S0009261415008362.ann" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/data/scienceie2017_dev/final/S0010938X13003818.ann" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/data/scienceie2017_dev/final/S0010938X14002157.ann" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/data/scienceie2017_dev/final/S0010938X15003261.ann" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/data/scienceie2017_dev/final/S0021961415003821.ann" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/data/scienceie2017_dev/final/S0021999113005652.ann" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/data/scienceie2017_dev/final/S0021999113005846.ann" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/data/scienceie2017_dev/final/S002199911500025X.ann" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/data/scienceie2017_dev/final/S0021999115003423.ann" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/data/scienceie2017_dev/final/S0021999115007895.ann" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/data/scienceie2017_dev/final/S0021999115008153.ann" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/data/scienceie2017_dev/final/S0021999115008372.ann" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/data/scienceie2017_dev/final/S0022311513010313.ann" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/data/scienceie2017_dev/final/S0022311513011422.ann" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/data/scienceie2017_dev/final/S0022311514006722.ann" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/data/scienceie2017_dev/final/S0022311514006941.ann" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/data/scienceie2017_dev/final/S0022311514009271.ann" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/data/scienceie2017_dev/final/S0022311515002354.ann" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/data/scienceie2017_dev/final/S0022311515301653.ann" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/data/scienceie2017_dev/final/S0022311515303901.ann" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/data/scienceie2017_dev/final/S0029549313003439.ann" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/data/scienceie2017_dev/final/S0029549314002854.ann" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/data/scienceie2017_dev/final/S0038092X14004824.ann" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/data/scienceie2017_dev/final/S0038092X15001024.ann" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/data/scienceie2017_dev/final/S0038092X15003059.ann" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/data/scienceie2017_dev/final/S0045782514001947.ann" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/data/scienceie2017_dev/final/S0045782515001322.ann" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/data/scienceie2017_dev/final/S0079642514000784.ann" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/data/scienceie2017_dev/final/S0079642515000705.ann" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/data/scienceie2017_dev/final/S0167844214000652.ann" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/data/scienceie2017_dev/final/S0254058415300766.ann" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/data/scienceie2017_dev/final/S0301010409001219.ann" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/data/scienceie2017_dev/final/S0301010413002139.ann" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/data/scienceie2017_dev/final/S0301010413004096.ann" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/data/scienceie2017_dev/final/S0301010415002189.ann" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/data/scienceie2017_dev/final/S0301010415300355.ann" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/data/scienceie2017_dev/final/S0301932213000487.ann" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/data/scienceie2017_dev/final/S0301932213001985.ann" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/data/scienceie2017_dev/final/S0301932214001931.ann" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/data/scienceie2017_dev/final/S0378381215300297.ann" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/data/scienceie2017_dev/final/S1359028614000989.ann" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/data/scienceie2017_dev/final/S1877750315000575.ann" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/data/scienceie2017_dev/final/S1877750315300119.ann" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/data/scienceie2017_dev/final/S2352179115300041.ann" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/data/scienceie2017_dev/out" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/data/scienceie2017_dev/out1" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/data/scienceie2017_dev/out2" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/data/scienceie2017_dev/out3" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/data/scienceie2017_dev/out_dev" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/data/scienceie2017_dev/rel/feats" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/data/scienceie2017_dev/temp/feats" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/data/scienceie2017_scripts/eval_py27.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/data/scienceie2017_scripts/util.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/data/scienceie2017_test_unlabelled/final/S0010482516301810.ann" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/data/scienceie2017_test_unlabelled/final/S0010938X15301268.ann" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/data/scienceie2017_test_unlabelled/final/S0010938X15301554.ann" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/data/scienceie2017_test_unlabelled/final/S0011227514002136.ann" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/data/scienceie2017_test_unlabelled/final/S0011227515000648.ann" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/data/scienceie2017_test_unlabelled/final/S0011227515001216.ann" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/data/scienceie2017_test_unlabelled/final/S002002551630384X.ann" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/data/scienceie2017_test_unlabelled/final/S0021961414003255.ann" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/data/scienceie2017_test_unlabelled/final/S002199911200068X.ann" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/data/scienceie2017_test_unlabelled/final/S0021999112002847.ann" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/data/scienceie2017_test_unlabelled/final/S0021999112003579.ann" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/data/scienceie2017_test_unlabelled/final/S0021999113002945.ann" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/data/scienceie2017_test_unlabelled/final/S0021999113003422.ann" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/data/scienceie2017_test_unlabelled/final/S002199911300346X.ann" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/data/scienceie2017_test_unlabelled/final/S0021999113004555.ann" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/data/scienceie2017_test_unlabelled/final/S0021999113005603.ann" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/data/scienceie2017_test_unlabelled/final/S0021999113005652.ann" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/data/scienceie2017_test_unlabelled/final/S0021999113005718.ann" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/data/scienceie2017_test_unlabelled/final/S0021999113006955.ann" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/data/scienceie2017_test_unlabelled/final/S0021999116303291.ann" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/data/scienceie2017_test_unlabelled/final/S0032386107010518.ann" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/data/scienceie2017_test_unlabelled/final/S0032386108009397.ann" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/data/scienceie2017_test_unlabelled/final/S0032386109001463.ann" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/data/scienceie2017_test_unlabelled/final/S0032386109003991.ann" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/data/scienceie2017_test_unlabelled/final/S0032386109005357.ann" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/data/scienceie2017_test_unlabelled/final/S0032386110001254.ann" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/data/scienceie2017_test_unlabelled/final/S0039602899010493.ann" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/data/scienceie2017_test_unlabelled/final/S0098300413002124.ann" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/data/scienceie2017_test_unlabelled/final/S0098300414000259.ann" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/data/scienceie2017_test_unlabelled/final/S0098300414002532.ann" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/data/scienceie2017_test_unlabelled/final/S0166361516300926.ann" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/data/scienceie2017_test_unlabelled/final/S0168365912007560.ann" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/data/scienceie2017_test_unlabelled/final/S0168365913001521.ann" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/data/scienceie2017_test_unlabelled/final/S0168365913009589.ann" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/data/scienceie2017_test_unlabelled/final/S0168583X14003929.ann" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/data/scienceie2017_test_unlabelled/final/S0257897213003563.ann" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/data/scienceie2017_test_unlabelled/final/S0257897213004131.ann" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/data/scienceie2017_test_unlabelled/final/S0263822312000657.ann" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/data/scienceie2017_test_unlabelled/final/S0263822312001468.ann" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/data/scienceie2017_test_unlabelled/final/S0301679X13003289.ann" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/data/scienceie2017_test_unlabelled/final/S0301679X14000449.ann" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/data/scienceie2017_test_unlabelled/final/S0301679X14003272.ann" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/data/scienceie2017_test_unlabelled/final/S0304399111001811.ann" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/data/scienceie2017_test_unlabelled/final/S030439911200040X.ann" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/data/scienceie2017_test_unlabelled/final/S0305440314001927.ann" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/data/scienceie2017_test_unlabelled/final/S0370269301015222.ann" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/data/scienceie2017_test_unlabelled/final/S0370269302011838.ann" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/data/scienceie2017_test_unlabelled/final/S0370269302012492.ann" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/data/scienceie2017_test_unlabelled/final/S0370269302013412.ann" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/data/scienceie2017_test_unlabelled/final/S0370269302014880.ann" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/data/scienceie2017_test_unlabelled/final/S0370269302014892.ann" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/data/scienceie2017_test_unlabelled/final/S0370269303015478.ann" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/data/scienceie2017_test_unlabelled/final/S0370269303017222.ann" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/data/scienceie2017_test_unlabelled/final/S037026930301801X.ann" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/data/scienceie2017_test_unlabelled/final/S0370269304005829.ann" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/data/scienceie2017_test_unlabelled/final/S0370269304007567.ann" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/data/scienceie2017_test_unlabelled/final/S0370269304007816.ann" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/data/scienceie2017_test_unlabelled/final/S0370269304008421.ann" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/data/scienceie2017_test_unlabelled/final/S0370269304008494.ann" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/data/scienceie2017_test_unlabelled/final/S0370269304009293.ann" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/data/scienceie2017_test_unlabelled/final/S0370269304012638.ann" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/data/scienceie2017_test_unlabelled/final/S037877531001949X.ann" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/data/scienceie2017_test_unlabelled/final/S0885230816301759.ann" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/data/scienceie2017_test_unlabelled/final/S092583881302834X.ann" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/data/scienceie2017_test_unlabelled/final/S0925838814009669.ann" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/data/scienceie2017_test_unlabelled/final/S0927025614003322.ann" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/data/scienceie2017_test_unlabelled/final/S0927025614006181.ann" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/data/scienceie2017_test_unlabelled/final/S0927025615006357.ann" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/data/scienceie2017_test_unlabelled/final/S096386951400070X.ann" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/data/scienceie2017_test_unlabelled/final/S0963869514000875.ann" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/data/scienceie2017_test_unlabelled/final/S0963869514000954.ann" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/data/scienceie2017_test_unlabelled/final/S0963869514001066.ann" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/data/scienceie2017_test_unlabelled/final/S0963869514001078.ann" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/data/scienceie2017_test_unlabelled/final/S0963869515000572.ann" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/data/scienceie2017_test_unlabelled/final/S0968432814000250.ann" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/data/scienceie2017_test_unlabelled/final/S1010603009002676.ann" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/data/scienceie2017_test_unlabelled/final/S1010603013001809.ann" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/data/scienceie2017_test_unlabelled/final/S107158191630074X.ann" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/data/scienceie2017_test_unlabelled/final/S1359646214000165.ann" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/data/scienceie2017_test_unlabelled/final/S1364815216302122.ann" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/data/scienceie2017_test_unlabelled/final/S1364815216302705.ann" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/data/scienceie2017_test_unlabelled/final/S136481521630305X.ann" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/data/scienceie2017_test_unlabelled/final/S1364815216303061.ann" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/data/scienceie2017_test_unlabelled/final/S1364815216303243.ann" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/data/scienceie2017_test_unlabelled/final/S1386505616301769.ann" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/data/scienceie2017_test_unlabelled/final/S1574119211001544.ann" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/data/scienceie2017_test_unlabelled/final/S1574119215000796.ann" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/data/scienceie2017_test_unlabelled/final/S1631070514000954.ann" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/data/scienceie2017_test_unlabelled/final/S167420011300196X.ann" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/data/scienceie2017_test_unlabelled/final/S1687850714000405.ann" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/data/scienceie2017_test_unlabelled/final/S1746809416300933.ann" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/data/scienceie2017_test_unlabelled/final/S1877750311000676.ann" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/data/scienceie2017_test_unlabelled/final/S1877750313000240.ann" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/data/scienceie2017_test_unlabelled/final/S187775031300077X.ann" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/data/scienceie2017_test_unlabelled/final/S1877750313001269.ann" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/data/scienceie2017_test_unlabelled/final/S1877750315000460.ann" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/data/scienceie2017_test_unlabelled/final/S2212671612000431.ann" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/data/scienceie2017_test_unlabelled/final/S2212671612000741.ann" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/data/scienceie2017_test_unlabelled/final/S221267161400105X.ann" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/data/scienceie2017_test_unlabelled/final/S221450951400014X.ann" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/data/scienceie2017_test_unlabelled/out_test" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/data/scienceie2017_test_unlabelled/temp/feats" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/data/scienceie2017_test_unlabelled/test/S0010482516301810.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/data/scienceie2017_test_unlabelled/test/S0010938X15301268.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/data/scienceie2017_test_unlabelled/test/S0010938X15301554.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/data/scienceie2017_test_unlabelled/test/S0011227514002136.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/data/scienceie2017_test_unlabelled/test/S0011227515000648.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/data/scienceie2017_test_unlabelled/test/S0011227515001216.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/data/scienceie2017_test_unlabelled/test/S002002551630384X.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/data/scienceie2017_test_unlabelled/test/S0021961414003255.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/data/scienceie2017_test_unlabelled/test/S002199911200068X.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/data/scienceie2017_test_unlabelled/test/S0021999112002847.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/data/scienceie2017_test_unlabelled/test/S0021999112003579.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/data/scienceie2017_test_unlabelled/test/S0021999113002945.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/data/scienceie2017_test_unlabelled/test/S0021999113003422.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/data/scienceie2017_test_unlabelled/test/S002199911300346X.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/data/scienceie2017_test_unlabelled/test/S0021999113004555.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/data/scienceie2017_test_unlabelled/test/S0021999113005603.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/data/scienceie2017_test_unlabelled/test/S0021999113005652.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/data/scienceie2017_test_unlabelled/test/S0021999113005718.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/data/scienceie2017_test_unlabelled/test/S0021999113006955.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/data/scienceie2017_test_unlabelled/test/S0021999116303291.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/data/scienceie2017_test_unlabelled/test/S0032386107010518.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/data/scienceie2017_test_unlabelled/test/S0032386108009397.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/data/scienceie2017_test_unlabelled/test/S0032386109001463.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/data/scienceie2017_test_unlabelled/test/S0032386109003991.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/data/scienceie2017_test_unlabelled/test/S0032386109005357.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/data/scienceie2017_test_unlabelled/test/S0032386110001254.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/data/scienceie2017_test_unlabelled/test/S0039602899010493.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/data/scienceie2017_test_unlabelled/test/S0098300413002124.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/data/scienceie2017_test_unlabelled/test/S0098300414000259.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/data/scienceie2017_test_unlabelled/test/S0098300414002532.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/data/scienceie2017_test_unlabelled/test/S0166361516300926.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/data/scienceie2017_test_unlabelled/test/S0168365912007560.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/data/scienceie2017_test_unlabelled/test/S0168365913001521.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/data/scienceie2017_test_unlabelled/test/S0168365913009589.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/data/scienceie2017_test_unlabelled/test/S0168583X14003929.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/data/scienceie2017_test_unlabelled/test/S0257897213003563.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/data/scienceie2017_test_unlabelled/test/S0257897213004131.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/data/scienceie2017_test_unlabelled/test/S0263822312000657.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/data/scienceie2017_test_unlabelled/test/S0263822312001468.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/data/scienceie2017_test_unlabelled/test/S0301679X13003289.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/data/scienceie2017_test_unlabelled/test/S0301679X14000449.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/data/scienceie2017_test_unlabelled/test/S0301679X14003272.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/data/scienceie2017_test_unlabelled/test/S0304399111001811.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/data/scienceie2017_test_unlabelled/test/S030439911200040X.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/data/scienceie2017_test_unlabelled/test/S0305440314001927.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/data/scienceie2017_test_unlabelled/test/S0370269301015222.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/data/scienceie2017_test_unlabelled/test/S0370269302011838.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/data/scienceie2017_test_unlabelled/test/S0370269302012492.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/data/scienceie2017_test_unlabelled/test/S0370269302013412.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/data/scienceie2017_test_unlabelled/test/S0370269302014880.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/data/scienceie2017_test_unlabelled/test/S0370269302014892.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/data/scienceie2017_test_unlabelled/test/S0370269303015478.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/data/scienceie2017_test_unlabelled/test/S0370269303017222.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/data/scienceie2017_test_unlabelled/test/S037026930301801X.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/data/scienceie2017_test_unlabelled/test/S0370269304005829.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/data/scienceie2017_test_unlabelled/test/S0370269304007567.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/data/scienceie2017_test_unlabelled/test/S0370269304007816.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/data/scienceie2017_test_unlabelled/test/S0370269304008421.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/data/scienceie2017_test_unlabelled/test/S0370269304008494.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/data/scienceie2017_test_unlabelled/test/S0370269304009293.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/data/scienceie2017_test_unlabelled/test/S0370269304012638.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/data/scienceie2017_test_unlabelled/test/S037877531001949X.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/data/scienceie2017_test_unlabelled/test/S0885230816301759.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/data/scienceie2017_test_unlabelled/test/S092583881302834X.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/data/scienceie2017_test_unlabelled/test/S0925838814009669.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/data/scienceie2017_test_unlabelled/test/S0927025614003322.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/data/scienceie2017_test_unlabelled/test/S0927025614006181.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/data/scienceie2017_test_unlabelled/test/S0927025615006357.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/data/scienceie2017_test_unlabelled/test/S096386951400070X.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/data/scienceie2017_test_unlabelled/test/S0963869514000875.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/data/scienceie2017_test_unlabelled/test/S0963869514000954.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/data/scienceie2017_test_unlabelled/test/S0963869514001066.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/data/scienceie2017_test_unlabelled/test/S0963869514001078.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/data/scienceie2017_test_unlabelled/test/S0963869515000572.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/data/scienceie2017_test_unlabelled/test/S0968432814000250.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/data/scienceie2017_test_unlabelled/test/S1010603009002676.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/data/scienceie2017_test_unlabelled/test/S1010603013001809.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/data/scienceie2017_test_unlabelled/test/S107158191630074X.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/data/scienceie2017_test_unlabelled/test/S1359646214000165.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/data/scienceie2017_test_unlabelled/test/S1364815216302122.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/data/scienceie2017_test_unlabelled/test/S1364815216302705.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/data/scienceie2017_test_unlabelled/test/S136481521630305X.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/data/scienceie2017_test_unlabelled/test/S1364815216303061.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/data/scienceie2017_test_unlabelled/test/S1364815216303243.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/data/scienceie2017_test_unlabelled/test/S1386505616301769.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/data/scienceie2017_test_unlabelled/test/S1574119211001544.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/data/scienceie2017_test_unlabelled/test/S1574119215000796.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/data/scienceie2017_test_unlabelled/test/S1631070514000954.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/data/scienceie2017_test_unlabelled/test/S167420011300196X.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/data/scienceie2017_test_unlabelled/test/S1687850714000405.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/data/scienceie2017_test_unlabelled/test/S1746809416300933.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/data/scienceie2017_test_unlabelled/test/S1877750311000676.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/data/scienceie2017_test_unlabelled/test/S1877750313000240.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/data/scienceie2017_test_unlabelled/test/S187775031300077X.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/data/scienceie2017_test_unlabelled/test/S1877750313001269.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/data/scienceie2017_test_unlabelled/test/S1877750315000460.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/data/scienceie2017_test_unlabelled/test/S2212671612000431.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/data/scienceie2017_test_unlabelled/test/S2212671612000741.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/data/scienceie2017_test_unlabelled/test/S221267161400105X.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/data/scienceie2017_test_unlabelled/test/S221450951400014X.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/data/scienceie2017_train/rel/feats" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/data/scienceie2017_train/temp/feats" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/data/scienceie2017_train/train2/feats" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/data/semeval_articles_test/S0010482516301810.ann" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/data/semeval_articles_test/S0010482516301810.txt" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/data/semeval_articles_test/S0010938X15301268.ann" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/data/semeval_articles_test/S0010938X15301268.txt" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/data/semeval_articles_test/S0010938X15301554.ann" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/data/semeval_articles_test/S0010938X15301554.txt" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/data/semeval_articles_test/S0011227514002136.ann" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/data/semeval_articles_test/S0011227514002136.txt" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/data/semeval_articles_test/S0011227515000648.ann" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/data/semeval_articles_test/S0011227515000648.txt" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/data/semeval_articles_test/S0011227515001216.ann" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/data/semeval_articles_test/S0011227515001216.txt" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/data/semeval_articles_test/S002002551630384X.ann" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/data/semeval_articles_test/S002002551630384X.txt" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/data/semeval_articles_test/S0021961414003255.ann" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/data/semeval_articles_test/S0021961414003255.txt" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/data/semeval_articles_test/S002199911200068X.ann" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/data/semeval_articles_test/S002199911200068X.txt" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/data/semeval_articles_test/S0021999112002847.ann" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/data/semeval_articles_test/S0021999112002847.txt" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/data/semeval_articles_test/S0021999112003579.ann" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/data/semeval_articles_test/S0021999112003579.txt" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/data/semeval_articles_test/S0021999113002945.ann" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/data/semeval_articles_test/S0021999113002945.txt" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/data/semeval_articles_test/S0021999113003422.ann" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/data/semeval_articles_test/S0021999113003422.txt" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/data/semeval_articles_test/S002199911300346X.ann" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/data/semeval_articles_test/S002199911300346X.txt" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/data/semeval_articles_test/S0021999113004555.ann" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/data/semeval_articles_test/S0021999113004555.txt" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/data/semeval_articles_test/S0021999113005603.ann" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/data/semeval_articles_test/S0021999113005603.txt" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/data/semeval_articles_test/S0021999113005652.ann" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/data/semeval_articles_test/S0021999113005652.txt" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/data/semeval_articles_test/S0021999113005718.ann" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/data/semeval_articles_test/S0021999113005718.txt" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/data/semeval_articles_test/S0021999113006955.ann" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/data/semeval_articles_test/S0021999113006955.txt" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/data/semeval_articles_test/S0021999116303291.ann" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/data/semeval_articles_test/S0021999116303291.txt" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/data/semeval_articles_test/S0032386107010518.ann" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/data/semeval_articles_test/S0032386107010518.txt" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/data/semeval_articles_test/S0032386108009397.ann" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/data/semeval_articles_test/S0032386108009397.txt" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/data/semeval_articles_test/S0032386109001463.ann" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/data/semeval_articles_test/S0032386109001463.txt" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/data/semeval_articles_test/S0032386109003991.ann" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/data/semeval_articles_test/S0032386109003991.txt" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/data/semeval_articles_test/S0032386109005357.ann" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/data/semeval_articles_test/S0032386109005357.txt" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/data/semeval_articles_test/S0032386110001254.ann" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/data/semeval_articles_test/S0032386110001254.txt" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/data/semeval_articles_test/S0039602899010493.ann" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/data/semeval_articles_test/S0039602899010493.txt" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/data/semeval_articles_test/S0098300413002124.ann" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/data/semeval_articles_test/S0098300413002124.txt" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/data/semeval_articles_test/S0098300414000259.ann" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/data/semeval_articles_test/S0098300414000259.txt" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/data/semeval_articles_test/S0098300414002532.ann" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/data/semeval_articles_test/S0098300414002532.txt" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/data/semeval_articles_test/S0166361516300926.ann" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/data/semeval_articles_test/S0166361516300926.txt" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/data/semeval_articles_test/S0168365912007560.ann" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/data/semeval_articles_test/S0168365912007560.txt" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/data/semeval_articles_test/S0168365913001521.ann" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/data/semeval_articles_test/S0168365913001521.txt" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/data/semeval_articles_test/S0168365913009589.ann" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/data/semeval_articles_test/S0168365913009589.txt" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/data/semeval_articles_test/S0168583X14003929.ann" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/data/semeval_articles_test/S0168583X14003929.txt" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/data/semeval_articles_test/S0257897213003563.ann" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/data/semeval_articles_test/S0257897213003563.txt" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/data/semeval_articles_test/S0257897213004131.ann" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/data/semeval_articles_test/S0257897213004131.txt" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/data/semeval_articles_test/S0263822312000657.ann" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/data/semeval_articles_test/S0263822312000657.txt" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/data/semeval_articles_test/S0263822312001468.ann" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/data/semeval_articles_test/S0263822312001468.txt" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/data/semeval_articles_test/S0301679X13003289.ann" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/data/semeval_articles_test/S0301679X13003289.txt" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/data/semeval_articles_test/S0301679X14000449.ann" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/data/semeval_articles_test/S0301679X14000449.txt" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/data/semeval_articles_test/S0301679X14003272.ann" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/data/semeval_articles_test/S0301679X14003272.txt" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/data/semeval_articles_test/S0304399111001811.ann" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/data/semeval_articles_test/S0304399111001811.txt" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/data/semeval_articles_test/S030439911200040X.ann" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/data/semeval_articles_test/S030439911200040X.txt" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/data/semeval_articles_test/S0305440314001927.ann" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/data/semeval_articles_test/S0305440314001927.txt" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/data/semeval_articles_test/S0370269301015222.ann" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/data/semeval_articles_test/S0370269301015222.txt" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/data/semeval_articles_test/S0370269302011838.ann" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/data/semeval_articles_test/S0370269302011838.txt" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/data/semeval_articles_test/S0370269302012492.ann" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/data/semeval_articles_test/S0370269302012492.txt" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/data/semeval_articles_test/S0370269302013412.ann" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/data/semeval_articles_test/S0370269302013412.txt" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/data/semeval_articles_test/S0370269302014880.ann" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/data/semeval_articles_test/S0370269302014880.txt" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/data/semeval_articles_test/S0370269302014892.ann" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/data/semeval_articles_test/S0370269302014892.txt" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/data/semeval_articles_test/S0370269303015478.ann" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/data/semeval_articles_test/S0370269303015478.txt" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/data/semeval_articles_test/S0370269303017222.ann" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/data/semeval_articles_test/S0370269303017222.txt" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/data/semeval_articles_test/S037026930301801X.ann" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/data/semeval_articles_test/S037026930301801X.txt" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/data/semeval_articles_test/S0370269304005829.ann" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/data/semeval_articles_test/S0370269304005829.txt" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/data/semeval_articles_test/S0370269304007567.ann" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/data/semeval_articles_test/S0370269304007567.txt" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/data/semeval_articles_test/S0370269304007816.ann" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/data/semeval_articles_test/S0370269304007816.txt" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/data/semeval_articles_test/S0370269304008421.ann" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/data/semeval_articles_test/S0370269304008421.txt" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/data/semeval_articles_test/S0370269304008494.ann" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/data/semeval_articles_test/S0370269304008494.txt" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/data/semeval_articles_test/S0370269304009293.ann" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/data/semeval_articles_test/S0370269304009293.txt" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/data/semeval_articles_test/S0370269304012638.ann" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/data/semeval_articles_test/S0370269304012638.txt" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/data/semeval_articles_test/S037877531001949X.ann" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/data/semeval_articles_test/S037877531001949X.txt" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/data/semeval_articles_test/S0885230816301759.ann" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/data/semeval_articles_test/S0885230816301759.txt" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/data/semeval_articles_test/S092583881302834X.ann" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/data/semeval_articles_test/S092583881302834X.txt" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/data/semeval_articles_test/S0925838814009669.ann" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/data/semeval_articles_test/S0925838814009669.txt" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/data/semeval_articles_test/S0927025614003322.ann" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/data/semeval_articles_test/S0927025614003322.txt" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/data/semeval_articles_test/S0927025614006181.ann" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/data/semeval_articles_test/S0927025614006181.txt" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/data/semeval_articles_test/S0927025615006357.ann" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/data/semeval_articles_test/S0927025615006357.txt" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/data/semeval_articles_test/S096386951400070X.ann" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/data/semeval_articles_test/S096386951400070X.txt" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/data/semeval_articles_test/S0963869514000875.ann" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/data/semeval_articles_test/S0963869514000875.txt" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/data/semeval_articles_test/S0963869514000954.ann" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/data/semeval_articles_test/S0963869514000954.txt" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/data/semeval_articles_test/S0963869514001066.ann" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/data/semeval_articles_test/S0963869514001066.txt" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/data/semeval_articles_test/S0963869514001078.ann" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/data/semeval_articles_test/S0963869514001078.txt" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/data/semeval_articles_test/S0963869515000572.ann" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/data/semeval_articles_test/S0963869515000572.txt" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/data/semeval_articles_test/S0968432814000250.ann" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/data/semeval_articles_test/S0968432814000250.txt" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/data/semeval_articles_test/S1010603009002676.ann" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/data/semeval_articles_test/S1010603009002676.txt" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/data/semeval_articles_test/S1010603013001809.ann" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/data/semeval_articles_test/S1010603013001809.txt" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/data/semeval_articles_test/S107158191630074X.ann" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/data/semeval_articles_test/S107158191630074X.txt" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/data/semeval_articles_test/S1359646214000165.ann" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/data/semeval_articles_test/S1359646214000165.txt" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/data/semeval_articles_test/S1364815216302122.ann" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/data/semeval_articles_test/S1364815216302122.txt" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/data/semeval_articles_test/S1364815216302705.ann" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/data/semeval_articles_test/S1364815216302705.txt" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/data/semeval_articles_test/S136481521630305X.ann" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/data/semeval_articles_test/S136481521630305X.txt" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/data/semeval_articles_test/S1364815216303061.ann" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/data/semeval_articles_test/S1364815216303061.txt" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/data/semeval_articles_test/S1364815216303243.ann" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/data/semeval_articles_test/S1364815216303243.txt" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/data/semeval_articles_test/S1386505616301769.ann" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/data/semeval_articles_test/S1386505616301769.txt" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/data/semeval_articles_test/S1574119211001544.ann" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/data/semeval_articles_test/S1574119211001544.txt" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/data/semeval_articles_test/S1574119215000796.ann" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/data/semeval_articles_test/S1574119215000796.txt" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/data/semeval_articles_test/S1631070514000954.ann" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/data/semeval_articles_test/S1631070514000954.txt" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/data/semeval_articles_test/S167420011300196X.ann" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/data/semeval_articles_test/S167420011300196X.txt" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/data/semeval_articles_test/S1687850714000405.ann" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/data/semeval_articles_test/S1687850714000405.txt" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/data/semeval_articles_test/S1746809416300933.ann" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/data/semeval_articles_test/S1746809416300933.txt" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/data/semeval_articles_test/S1877750311000676.ann" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/data/semeval_articles_test/S1877750311000676.txt" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/data/semeval_articles_test/S1877750313000240.ann" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/data/semeval_articles_test/S1877750313000240.txt" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/data/semeval_articles_test/S187775031300077X.ann" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/data/semeval_articles_test/S187775031300077X.txt" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/data/semeval_articles_test/S1877750313001269.ann" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/data/semeval_articles_test/S1877750313001269.txt" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/data/semeval_articles_test/S1877750315000460.ann" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/data/semeval_articles_test/S1877750315000460.txt" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/data/semeval_articles_test/S2212671612000431.ann" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/data/semeval_articles_test/S2212671612000431.txt" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/data/semeval_articles_test/S2212671612000741.ann" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/data/semeval_articles_test/S2212671612000741.txt" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/data/semeval_articles_test/S221267161400105X.ann" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/data/semeval_articles_test/S221267161400105X.txt" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/data/semeval_articles_test/S221450951400014X.ann" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/data/semeval_articles_test/S221450951400014X.txt" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/data/stats/documents.pkl" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/data/stats/idf.pkl" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/data/generate_stats.py" afterPath="" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/data/parse.py" afterPath="$PROJECT_DIR$/data/parse.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/data/scienceie2017_scripts/xml_utils.py" afterPath="$PROJECT_DIR$/data/scienceie2017_scripts/xml_utils.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/model/README.md" afterPath="$PROJECT_DIR$/model/README.md" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/model/dev" afterPath="$PROJECT_DIR$/model/dev" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/model/features.py" afterPath="$PROJECT_DIR$/model/features.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/model/model.py" afterPath="$PROJECT_DIR$/model/model.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/model/nn.py" afterPath="$PROJECT_DIR$/model/nn.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/model/test" afterPath="$PROJECT_DIR$/model/test" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/model/train" afterPath="$PROJECT_DIR$/model/train" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/model/train.py" afterPath="$PROJECT_DIR$/model/train.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/model/traindev" afterPath="$PROJECT_DIR$/model/traindev" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/model/utils.py" afterPath="$PROJECT_DIR$/model/utils.py" />
+    </list>
+    <ignored path="ScienceIE.iws" />
+    <ignored path=".idea/workspace.xml" />
+    <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
+    <option name="TRACKING_ENABLED" value="true" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="CreatePatchCommitExecutor">
+    <option name="PATCH_PATH" value="" />
+  </component>
+  <component name="ExecutionTargetManager" SELECTED_TARGET="default_target" />
+  <component name="FavoritesManager">
+    <favorites_list name="ScienceIE" />
+  </component>
+  <component name="FileEditorManager">
+    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
+      <file leaf-file-name="README.md" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/model/README.md">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="135">
+              <caret line="9" column="39" selection-start-line="9" selection-start-column="39" selection-end-line="9" selection-end-column="39" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="LICENSE.md" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/model/LICENSE.md">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="0">
+              <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name=".gitignore" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/.gitignore">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="0">
+              <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="README" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/data/README">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="0">
+              <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+    </leaf>
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Python Script" />
+      </list>
+    </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="IdeDocumentHistory">
+    <option name="CHANGED_PATHS">
+      <list>
+        <option value="$PROJECT_DIR$/data/README" />
+        <option value="$PROJECT_DIR$/data/scienceie2017_train/train2/S0167931713005042.ann" />
+        <option value="$PROJECT_DIR$/scienceIE/.gitignore" />
+        <option value="$PROJECT_DIR$/.gitignore" />
+        <option value="$PROJECT_DIR$/Model/README.md" />
+        <option value="$PROJECT_DIR$/Model/LICENSE.md" />
+        <option value="$PROJECT_DIR$/parse.py" />
+        <option value="$PROJECT_DIR$/model/optimization.py" />
+        <option value="$PROJECT_DIR$/model/models/features.py" />
+        <option value="$PROJECT_DIR$/data/scienceie2017_train/feat/feats" />
+        <option value="$PROJECT_DIR$/model/generate_stats.py" />
+        <option value="$PROJECT_DIR$/model/tagger.py" />
+        <option value="$PROJECT_DIR$/data/generate_stats.py" />
+        <option value="$PROJECT_DIR$/data/scienceie2017_test_unlabelled/test/S0010938X15301268.txt" />
+        <option value="$PROJECT_DIR$/data/scienceie2017_scripts/eval.py" />
+        <option value="$PROJECT_DIR$/data/scienceie2017_dev/feat/S0003491613001516.out" />
+        <option value="$PROJECT_DIR$/model/loader.py" />
+        <option value="$PROJECT_DIR$/data/scienceie2017_dev/final/S0010938X15003261.ann" />
+        <option value="$PROJECT_DIR$/data/scienceie2017_train/rel/feats" />
+        <option value="$PROJECT_DIR$/data/scienceie2017_train/temp/S037026930400680X.out" />
+        <option value="$PROJECT_DIR$/data/parse.py" />
+        <option value="$PROJECT_DIR$/data/scienceie2017_test_unlabelled/temp/feats" />
+        <option value="$PROJECT_DIR$/data/scienceie2017_scripts/xml_utils.py" />
+        <option value="$PROJECT_DIR$/model/train" />
+        <option value="$PROJECT_DIR$/model/features.py" />
+        <option value="$PROJECT_DIR$/data/scienceie2017_dev/final/S0010938X13003818.ann" />
+        <option value="$PROJECT_DIR$/data/parse2.py" />
+        <option value="$PROJECT_DIR$/data/scienceie2017_scripts/eval_py27.py" />
+        <option value="$PROJECT_DIR$/data/evaluate.py" />
+        <option value="$PROJECT_DIR$/model/utils.py" />
+        <option value="$PROJECT_DIR$/model/nn.py" />
+        <option value="$PROJECT_DIR$/model/model.py" />
+        <option value="$PROJECT_DIR$/model/train.py" />
+        <option value="$PROJECT_DIR$/model/README.md" />
+      </list>
+    </option>
+  </component>
+  <component name="ProjectFrameBounds">
+    <option name="x" value="138" />
+    <option name="y" value="104" />
+    <option name="width" value="1280" />
+    <option name="height" value="724" />
+  </component>
+  <component name="ProjectLevelVcsManager" settingsEditedManually="false">
+    <OptionsSetting value="true" id="Add" />
+    <OptionsSetting value="true" id="Remove" />
+    <OptionsSetting value="true" id="Checkout" />
+    <OptionsSetting value="true" id="Update" />
+    <OptionsSetting value="true" id="Status" />
+    <OptionsSetting value="true" id="Edit" />
+    <ConfirmationsSetting value="1" id="Add" />
+    <ConfirmationsSetting value="0" id="Remove" />
+  </component>
+  <component name="ProjectView">
+    <navigator currentView="ProjectPane" proportions="" version="1">
+      <flattenPackages />
+      <showMembers />
+      <showModules />
+      <showLibraryContents />
+      <hideEmptyPackages />
+      <abbreviatePackageNames />
+      <autoscrollToSource />
+      <autoscrollFromSource />
+      <sortByType />
+      <manualOrder />
+      <foldersAlwaysOnTop value="true" />
+    </navigator>
+    <panes>
+      <pane id="Scope" />
+      <pane id="ProjectPane">
+        <subPane>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="ScienceIE" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="ScienceIE" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="ScienceIE" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+        </subPane>
+      </pane>
+      <pane id="Scratches" />
+    </panes>
+  </component>
+  <component name="PropertiesComponent">
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../RAZ/features/parse.py" />
+    <property name="settings.editor.selected.configurable" value="com.jetbrains.python.configuration.PyActiveSdkModuleConfigurable" />
+    <property name="settings.editor.splitter.proportion" value="0.2" />
+  </component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/data" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/data/scienceie2017_dev" />
+      <recent name="$PROJECT_DIR$/data/scienceie2017_test_unlabelled" />
+      <recent name="$PROJECT_DIR$/data/scienceie2017_test_unlabelled/test" />
+      <recent name="$PROJECT_DIR$/data/classes/train" />
+      <recent name="$PROJECT_DIR$/data/classes" />
+    </key>
+  </component>
+  <component name="RunManager" selected="Python.train">
+    <configuration default="false" name="parse" type="PythonConfigurationType" factoryName="Python" temporary="true">
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <module name="ScienceIE" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/data/parse.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <method />
+    </configuration>
+    <configuration default="false" name="train" type="PythonConfigurationType" factoryName="Python" temporary="true">
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/model" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <module name="ScienceIE" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/model/train.py" />
+      <option name="PARAMETERS" value="--train ../../scienceIE/data/scienceie2017_train/feat/feats --dev ../../scienceIE/data/scienceie2017_dev/feat/feats --test ../../scienceIE/data/scienceie2017_test_unlabelled/feat/feats" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <method />
+    </configuration>
+    <configuration default="false" name="evaluate" type="PythonConfigurationType" factoryName="Python" temporary="true">
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/data" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <module name="ScienceIE" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/data/evaluate.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <method />
+    </configuration>
+    <configuration default="false" name="eval_py27" type="PythonConfigurationType" factoryName="Python" temporary="true">
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/data/scienceie2017_scripts" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <module name="ScienceIE" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/data/scienceie2017_scripts/eval_py27.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <method />
+    </configuration>
+    <configuration default="false" name="parse2" type="PythonConfigurationType" factoryName="Python" temporary="true">
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/data" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <module name="ScienceIE" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/data/parse2.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <method />
+    </configuration>
+    <configuration default="true" type="PythonConfigurationType" factoryName="Python">
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="" />
+      <option name="IS_MODULE_SDK" value="false" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <module name="ScienceIE" />
+      <option name="SCRIPT_NAME" value="" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <method />
+    </configuration>
+    <configuration default="true" type="Tox" factoryName="Tox">
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs />
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="" />
+      <option name="IS_MODULE_SDK" value="false" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <module name="ScienceIE" />
+      <method />
+    </configuration>
+    <configuration default="true" type="tests" factoryName="Attests">
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs />
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="" />
+      <option name="IS_MODULE_SDK" value="false" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <module name="ScienceIE" />
+      <option name="SCRIPT_NAME" value="" />
+      <option name="CLASS_NAME" value="" />
+      <option name="METHOD_NAME" value="" />
+      <option name="FOLDER_NAME" value="" />
+      <option name="TEST_TYPE" value="TEST_SCRIPT" />
+      <option name="PATTERN" value="" />
+      <option name="USE_PATTERN" value="false" />
+      <method />
+    </configuration>
+    <configuration default="true" type="tests" factoryName="Doctests">
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs />
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="" />
+      <option name="IS_MODULE_SDK" value="false" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <module name="ScienceIE" />
+      <option name="SCRIPT_NAME" value="" />
+      <option name="CLASS_NAME" value="" />
+      <option name="METHOD_NAME" value="" />
+      <option name="FOLDER_NAME" value="" />
+      <option name="TEST_TYPE" value="TEST_SCRIPT" />
+      <option name="PATTERN" value="" />
+      <option name="USE_PATTERN" value="false" />
+      <method />
+    </configuration>
+    <configuration default="true" type="tests" factoryName="Nosetests">
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs />
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="" />
+      <option name="IS_MODULE_SDK" value="false" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <module name="ScienceIE" />
+      <option name="SCRIPT_NAME" value="" />
+      <option name="CLASS_NAME" value="" />
+      <option name="METHOD_NAME" value="" />
+      <option name="FOLDER_NAME" value="" />
+      <option name="TEST_TYPE" value="TEST_SCRIPT" />
+      <option name="PATTERN" value="" />
+      <option name="USE_PATTERN" value="false" />
+      <option name="PARAMS" value="" />
+      <option name="USE_PARAM" value="false" />
+      <method />
+    </configuration>
+    <configuration default="true" type="tests" factoryName="Unittests">
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs />
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="" />
+      <option name="IS_MODULE_SDK" value="false" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <module name="ScienceIE" />
+      <option name="SCRIPT_NAME" value="" />
+      <option name="CLASS_NAME" value="" />
+      <option name="METHOD_NAME" value="" />
+      <option name="FOLDER_NAME" value="" />
+      <option name="TEST_TYPE" value="TEST_SCRIPT" />
+      <option name="PATTERN" value="" />
+      <option name="USE_PATTERN" value="false" />
+      <option name="PUREUNITTEST" value="true" />
+      <option name="PARAMS" value="" />
+      <option name="USE_PARAM" value="false" />
+      <method />
+    </configuration>
+    <configuration default="true" type="tests" factoryName="py.test">
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs />
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="" />
+      <option name="IS_MODULE_SDK" value="false" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <module name="ScienceIE" />
+      <option name="SCRIPT_NAME" value="" />
+      <option name="CLASS_NAME" value="" />
+      <option name="METHOD_NAME" value="" />
+      <option name="FOLDER_NAME" value="" />
+      <option name="TEST_TYPE" value="TEST_SCRIPT" />
+      <option name="PATTERN" value="" />
+      <option name="USE_PATTERN" value="false" />
+      <option name="testToRun" value="" />
+      <option name="keywords" value="" />
+      <option name="params" value="" />
+      <option name="USE_PARAM" value="false" />
+      <option name="USE_KEYWORD" value="false" />
+      <method />
+    </configuration>
+    <configuration default="false" name="generate_stats" type="PythonConfigurationType" factoryName="Python">
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="/usr/bin/python" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/" />
+      <option name="IS_MODULE_SDK" value="false" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <module name="ScienceIE" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/model/generate_stats.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <method />
+    </configuration>
+    <list size="6">
+      <item index="0" class="java.lang.String" itemvalue="Python.generate_stats" />
+      <item index="1" class="java.lang.String" itemvalue="Python.parse" />
+      <item index="2" class="java.lang.String" itemvalue="Python.train" />
+      <item index="3" class="java.lang.String" itemvalue="Python.evaluate" />
+      <item index="4" class="java.lang.String" itemvalue="Python.eval_py27" />
+      <item index="5" class="java.lang.String" itemvalue="Python.parse2" />
+    </list>
+    <recent_temporary>
+      <list size="5">
+        <item index="0" class="java.lang.String" itemvalue="Python.train" />
+        <item index="1" class="java.lang.String" itemvalue="Python.eval_py27" />
+        <item index="2" class="java.lang.String" itemvalue="Python.evaluate" />
+        <item index="3" class="java.lang.String" itemvalue="Python.parse2" />
+        <item index="4" class="java.lang.String" itemvalue="Python.parse" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="ShelveChangesManager" show_recycled="false">
+    <option name="remove_strategy" value="false" />
+  </component>
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="695bcf9b-edbc-4ec4-abdf-d206c876d5f5" name="Default" comment="" />
+      <created>1478851884466</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1478851884466</updated>
+    </task>
+    <servers />
+  </component>
+  <component name="TodoView">
+    <todo-panel id="selected-file">
+      <is-autoscroll-to-source value="true" />
+    </todo-panel>
+    <todo-panel id="all">
+      <are-packages-shown value="true" />
+      <is-autoscroll-to-source value="true" />
+    </todo-panel>
+  </component>
+  <component name="ToolWindowManager">
+    <frame x="138" y="104" width="1280" height="724" extended-state="0" />
+    <editor active="false" />
+    <layout>
+      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.28038126" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32729805" sideWeight="0.4947146" order="6" side_tool="false" content_ui="tabs" />
+      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.32594937" sideWeight="0.5369341" order="7" side_tool="true" content_ui="tabs" />
+      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
+      <window_info id="Python Console" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.32594937" sideWeight="0.46306592" order="8" side_tool="false" content_ui="tabs" />
+      <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.2494043" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3259053" sideWeight="0.48625794" order="9" side_tool="false" content_ui="tabs" />
+      <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
+      <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
+      <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
+      <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
+      <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.39873418" sideWeight="0.4050834" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32777777" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.39972144" sideWeight="0.4918957" order="3" side_tool="false" content_ui="tabs" />
+    </layout>
+  </component>
+  <component name="Vcs.Log.UiProperties">
+    <option name="RECENTLY_FILTERED_USER_GROUPS">
+      <collection />
+    </option>
+    <option name="RECENTLY_FILTERED_BRANCH_GROUPS">
+      <collection />
+    </option>
+  </component>
+  <component name="VcsContentAnnotationSettings">
+    <option name="myLimit" value="2678400000" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager />
+    <watches-manager />
+  </component>
+  <component name="editorHistoryManager">
+    <entry file="file://$PROJECT_DIR$/data/scienceie2017_test_unlabelled/final/S0010482516301810.ann">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/data/scienceie2017_test_unlabelled/final/S0011227514002136.ann">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/data/scienceie2017_dev/final/S0010938X13003818.ann">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="30">
+          <caret line="2" column="0" selection-start-line="2" selection-start-column="0" selection-end-line="2" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/data/scienceie2017_dev/final/S0010938X14002157.ann">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-15">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/data/scienceie2017_dev/dev/S0010938X13003818.txt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/data/scienceie2017_train/rel/feats">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/data/scienceie2017_dev/rel/feats">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="15960">
+          <caret line="1064" column="0" selection-start-line="1064" selection-start-column="0" selection-end-line="1064" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/data/scienceie2017_test_unlabelled/final/S1877750311000676.ann">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/data/scienceie2017_test_unlabelled/final/S1877750313000240.ann">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/data/scienceie2017_test_unlabelled/test/S0010938X15301554.txt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="15">
+          <caret line="1" column="0" selection-start-line="1" selection-start-column="0" selection-end-line="1" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/model/dev">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/data/scienceie2017_dev/out_dev">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/data/scienceie2017_scripts/xml_utils.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="155">
+          <caret line="167" column="17" selection-start-line="167" selection-start-column="17" selection-end-line="167" selection-end-column="17" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/model/train">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="45">
+          <caret line="3" column="55" selection-start-line="3" selection-start-column="55" selection-end-line="3" selection-end-column="55" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/data/scienceie2017_dev/out">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="12555">
+          <caret line="837" column="13" selection-start-line="837" selection-start-column="13" selection-end-line="837" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/data/scienceie2017_train/train2/S0166218X14003011.ann">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="15">
+          <caret line="1" column="51" selection-start-line="1" selection-start-column="20" selection-end-line="1" selection-end-column="51" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/data/scienceie2017_train/train2/S0166218X1300348X.ann">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/data/scienceie2017_train/train2/S0010938X12002508.ann">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="135">
+          <caret line="9" column="57" selection-start-line="9" selection-start-column="20" selection-end-line="9" selection-end-column="57" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/data/scienceie2017_train/train2/S0010938X1530161X.ann">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="75">
+          <caret line="5" column="44" selection-start-line="5" selection-start-column="24" selection-end-line="5" selection-end-column="44" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/data/scienceie2017_scripts/eval_py27.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="95">
+          <caret line="244" column="22" selection-start-line="244" selection-start-column="22" selection-end-line="244" selection-end-column="22" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/data/evaluate.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="2085">
+          <caret line="144" column="46" selection-start-line="144" selection-start-column="46" selection-end-line="144" selection-end-column="46" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/data/scienceie2017_test_unlabelled/test/S0010938X15301554.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/data/scienceie2017_train/train2/S0010938X13002187.ann">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="30">
+          <caret line="2" column="29" selection-start-line="2" selection-start-column="29" selection-end-line="2" selection-end-column="29" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/data/scienceie2017_train/train2/S0010938X12001163.ann">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="45">
+          <caret line="3" column="28" selection-start-line="3" selection-start-column="28" selection-end-line="3" selection-end-column="28" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/data/scienceie2017_test_unlabelled/test/S0010938X15301268.txt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="15">
+          <caret line="1" column="0" selection-start-line="1" selection-start-column="0" selection-end-line="1" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/model/optimization.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/data/parse2.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1500">
+          <caret line="110" column="0" selection-start-line="110" selection-start-column="0" selection-end-line="110" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/data/scienceie2017_test_unlabelled/feat/S0010938X15301554.out">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="210">
+          <caret line="14" column="13" selection-start-line="14" selection-start-column="13" selection-end-line="14" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/data/scienceie2017_test_unlabelled/temp/S0010938X15301554.out">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/data/scienceie2017_test_unlabelled/test/S0010938X15301268.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="89931" selection-start-line="0" selection-start-column="89931" selection-end-line="0" selection-end-column="91062" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/data/scienceie2017_test_unlabelled/out_test">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/data/scienceie2017_test_unlabelled/final/S0010938X15301268.ann">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="270">
+          <caret line="18" column="0" selection-start-line="18" selection-start-column="0" selection-end-line="18" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/data/scienceie2017_test_unlabelled/final/S0010938X15301554.ann">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="180">
+          <caret line="12" column="22" selection-start-line="12" selection-start-column="22" selection-end-line="12" selection-end-column="22" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/data/scienceie2017_test_unlabelled/final/S0011227515000648.ann">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/data/scienceie2017_test_unlabelled/final/S0011227515001216.ann">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="285">
+          <caret line="19" column="0" selection-start-line="19" selection-start-column="0" selection-end-line="19" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/model/tagger.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/model/nn.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="15">
+          <caret line="1" column="0" selection-start-line="1" selection-start-column="0" selection-end-line="1" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/data/generate_stats.py" />
+    <entry file="file:///Library/Python/2.7/site-packages/theano/__init__.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="810">
+          <caret line="54" column="0" selection-start-line="54" selection-start-column="0" selection-end-line="54" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file:///Library/Python/2.7/site-packages/theano/gof/cmodule.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="255">
+          <caret line="17" column="11" selection-start-line="17" selection-start-column="11" selection-end-line="17" selection-end-column="11" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/model/traindev">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="90">
+          <caret line="899" column="75" selection-start-line="899" selection-start-column="75" selection-end-line="899" selection-end-column="75" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/model/utils.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="113">
+          <caret line="178" column="23" selection-start-line="178" selection-start-column="23" selection-end-line="178" selection-end-column="23" />
+          <folding>
+            <element signature="e#0#9#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/model/features.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="188">
+          <caret line="130" column="26" selection-start-line="130" selection-start-column="26" selection-end-line="130" selection-end-column="26" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/model/loader.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="158">
+          <caret line="136" column="15" selection-start-line="136" selection-start-column="15" selection-end-line="136" selection-end-column="15" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/model/model.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="90">
+          <caret line="6" column="13" selection-start-line="6" selection-start-column="13" selection-end-line="6" selection-end-column="13" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../RAZ/features/parse.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="60">
+          <caret line="6" column="30" selection-start-line="6" selection-start-column="30" selection-end-line="6" selection-end-column="30" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/model/train.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="165">
+          <caret line="157" column="28" selection-start-line="157" selection-start-column="28" selection-end-line="157" selection-end-column="28" />
+          <folding>
+            <element signature="e#23#32#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/model/README.md">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="135">
+          <caret line="9" column="39" selection-start-line="9" selection-start-column="39" selection-end-line="9" selection-end-column="39" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/model/LICENSE.md">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/.gitignore">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/data/README">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+  </component>
+</project>

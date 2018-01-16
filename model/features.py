@@ -2,6 +2,8 @@
 # -*- coding: utf-8 -*-
 import nltk
 import re
+from nltk.corpus import stopwords
+
 
 def pos_feature(tokens):
     """
@@ -70,12 +72,29 @@ def contains_hyphen(tokens):
     symbols=[u'-', u'–']
     return  binary_to_int(any(symbols[i] in tokens for i in xrange(len(symbols))))
 
-def in_quotes(tokens):
+def in_quotes(tokens, flag_in):
     symbols = [u'\'', u'‘', u'’', u'"', u'`', u'“', u'”']
-    return binary_to_int(any(symbols[i] in [tokens[0], tokens[-1]] for i in xrange(len(symbols))))
+    if tokens == '\'s':
+        return 0
+    if any(symbols[i] in [tokens[0]] for i in xrange(len(symbols))) and any(symbols[i] in [tokens[-1]] for i in xrange(len(symbols))):
+        return 2
+    elif any(symbols[i] in [tokens[0]] for i in xrange(len(symbols))):
+        flag_in=1
+    elif any(symbols[i] in [tokens[-1]] for i in xrange(len(symbols))):
+        flag_in=-1
+    else:
+        return flag_in
+    return flag_in
+
+
+#def in_quotes(tokens):
+#    symbols = [u'\'', u'‘', u'’', u'"', u'`', u'“', u'”']
+#    return binary_to_int(any(symbols[i] in [tokens[0], tokens[-1]] for i in xrange(len(symbols))))
 #    for i,items in enumerate(k):
 #        if any (k[i-1] ==1, k[i-2] ==1, k[i-3] ==1) and any (k[i+1] == 1, k[i+2] ==1, k[i+3] ==1):
 #            k[i] = 1
+
+
 
 def contains_maths(tokens):
     symbols=[u'=', u'>', u'<']
@@ -90,16 +109,48 @@ def alphanumeric(tokens):
 
 
 def gaz_binary(tokens):
-    return str(contains_hyphen(tokens))+ ' ' +str(in_quotes(tokens))+ ' ' +str(contains_maths(tokens))+ \
+    return str(contains_hyphen(tokens))+ ' '  +str(contains_maths(tokens))+ \
            ' ' +str(non_ascii(tokens))+ ' ' +str(alphanumeric(tokens))+ ' ' +str(tokens.isalnum())
+
 
 
 def write_crfpp_feat_file(feat_list,filename):
     #TODO: Replacement coerce str to int
+    flag_in=0
+    rf=open('../data/scienceie2017_test_unlabelled/temp/feats','r')
+    all = rf.readlines()
+    stop = set(stopwords.words('english'))
+    def get_in_ref(index, word):
+        title=unicode(all[index], 'utf-8').lower()
+        if word in title and word not in stop:
+            return '1'
+        else:
+            return '0'
+
+    def get_in_others(index, word):
+        if word.isdigit():
+            return '0'
+        if word in ['[', ']', '(', ')', ',', '.']:
+            return '0'
+        ref=unicode(all[index], 'utf-8').lower()
+        if ref.strip() == '':
+            return '-'
+        if word not in stop:
+            k=0
+            try:
+                k=len(re.findall(word, ref))
+            except Exception:
+                return '-'
+            return str(k)
+        else:
+            return '0'
+
+
     w_stream=open(filename,'w')
-    for item in feat_list:
+    for k,item in enumerate(feat_list):
         for i,items in enumerate(item['str_words']):
             binary_feats=gaz_binary(items)
+            flag_in=in_quotes(items, flag_in)
             feat_s=items + ' ' + items[0] + ' ' + items[-1] + \
             ' ' + items[:min(2,len(items))] + ' ' + items[max(-2,-len(items)):] + \
             ' ' + items[:min(3, len(items) )] + ' ' + items[max(-3, -len(
@@ -107,7 +158,10 @@ def write_crfpp_feat_file(feat_list,filename):
                 ' ' + items[:min(4, len(items))] + ' ' + items[max(-4, -len(
                     items)):] + \
                    ' ' + str(item['words'][i]) + ' ' + str(item['caps'][i]) + ' ' + str(item['pos_tags'][i]) +\
-                   ' ' + binary_feats +' ' + str(item['tags'][i])
+                   ' ' + binary_feats +' '+str(abs(flag_in))+' ' + get_in_ref(4*k, items.lower()) + ' ' + get_in_others(4*k+1, items.lower()) +\
+                   ' ' + get_in_others(4*k+2, items.lower()) + ' '+str(item['tags'][i])
             w_stream.write(feat_s.encode('utf-8'))
             w_stream.write('\n'.encode('utf-8'))
+            if flag_in == 2 or flag_in == -1:
+                flag_in = 0
         w_stream.write('\n'.encode('utf-8'))
