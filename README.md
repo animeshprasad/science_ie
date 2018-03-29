@@ -10,7 +10,7 @@ python train.py --train ../data/scienceie2017_train/feat/feats --dev ../data/sci
 
 
 Please cite following publication(s) if you refer this work:
-
+```
 @InProceedings{prasad-kan:2017:SemEval,
   author    = {Prasad, Animesh  and  Kan, Min-Yen},
   title     = {WING-NUS at SemEval-2017 Task 10: Keyphrase Extraction and Classification as Joint Sequence Labeling},
@@ -22,3 +22,4 @@ Please cite following publication(s) if you refer this work:
   pages     = {972--976},
   url       = {http://www.aclweb.org/anthology/S17-2170}
 }
+```
