@@ -1,0 +1,2 @@
+This folder contains one verses all classification for the three classes.
+There will be 1 train and dev file for each class where token only from that class are marked as 1.

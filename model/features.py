@@ -158,8 +158,7 @@ def write_crfpp_feat_file(feat_list,filename):
                 ' ' + items[:min(4, len(items))] + ' ' + items[max(-4, -len(
                     items)):] + \
                    ' ' + str(item['words'][i]) + ' ' + str(item['caps'][i]) + ' ' + str(item['pos_tags'][i]) +\
-                   ' ' + binary_feats +' '+str(abs(flag_in))+' ' + get_in_ref(4*k, items.lower()) + ' ' + get_in_others(4*k+1, items.lower()) +\
-                   ' ' + get_in_others(4*k+2, items.lower()) + ' '+str(item['tags'][i])
+                   ' ' + binary_feats +' '+str(abs(flag_in))+ ' ' +str(item['tags'][i])
             w_stream.write(feat_s.encode('utf-8'))
             w_stream.write('\n'.encode('utf-8'))
             if flag_in == 2 or flag_in == -1:

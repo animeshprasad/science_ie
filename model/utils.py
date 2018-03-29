@@ -4,53 +4,6 @@ import numpy as np
 import theano
 
 
-models_path = "./models"
-eval_path = "./evaluation"
-eval_temp = os.path.join(eval_path, "temp")
-
-
-def get_name(parameters):
-    """
-    Generate a model name from its parameters.
-    """
-    l = []
-    for k, v in parameters.items():
-        if type(v) is str and "/" in v:
-            l.append((k, v[::-1][:v[::-1].index('/')][::-1]))
-        else:
-            l.append((k, v))
-    name = ",".join(["%s=%s" % (k, str(v).replace(',', '')) for k, v in l])
-    return "".join(i for i in name if i not in "\/:*?<>|")
-
-
-def set_values(name, param, pretrained):
-    """
-    Initialize a network parameter with pretrained values.
-    We check that sizes are compatible.
-    """
-    param_value = param.get_value()
-    if pretrained.size != param_value.size:
-        raise Exception(
-            "Size mismatch for parameter %s. Expected %i, found %i."
-            % (name, param_value.size, pretrained.size)
-        )
-    param.set_value(np.reshape(
-        pretrained, param_value.shape
-    ).astype(np.float32))
-
-
-def shared(shape, name):
-    """
-    Create a shared object of a numpy array.
-    """
-    if len(shape) == 1:
-        value = np.zeros(shape)  # bias are initialized with zeros
-    else:
-        drange = np.sqrt(6. / (np.sum(shape)))
-        value = drange * np.random.uniform(low=-1.0, high=1.0, size=shape)
-    return theano.shared(value=value.astype(theano.config.floatX), name=name)
-
-
 def create_dico(item_list):
     """
     Create a dictionary of items from a list of list of items.
@@ -155,37 +108,4 @@ def create_input(data, parameters, add_label, singletons=None):
     if add_label:
         input.append(data['tags'])
     return input
-
-
-def evaluate(parameters, f_eval, raw_sentences, parsed_sentences,
-             id_to_tag):
-    """
-    Evaluate current model based on F1.
-    """
-    #TODO: Use evaluation scripts
-    for raw_sentence, data in zip(raw_sentences, parsed_sentences):
-        input = create_input(data, parameters, False)
-        if parameters['crf']:
-            y_preds = np.array(f_eval(*input))[1:-1]
-        else:
-            y_preds = f_eval(*input).argmax(axis=1)
-        y_reals = np.array(data['tags']).astype(np.int32)
-        assert len(y_preds) == len(y_reals)
-        p_tags = [id_to_tag[y_pred] for y_pred in y_preds]
-        r_tags = [id_to_tag[y_real] for y_real in y_reals]
-        confusion = np.zeros((len(set(r_tags)),len(set(r_tags))))
-        for i in xrange(len(r_tags)):
-            confusion[int(r_tags[i])][int(p_tags[i])] = confusion[int(r_tags[i])][int(p_tags[i])] + 1
-        print confusion
-        tp = np.zeros(len(set(r_tags)))
-        fp = np.zeros(len(set(r_tags)))
-        fn = np.zeros(len(set(r_tags)))
-        f1 = np.zeros(len(set(r_tags)))
-        for j in xrange(len(set(r_tags))):
-            tp[j] = confusion[j][j]
-            fp[j] = np.sum(confusion, axis = 1)[j] - tp[j]
-            fn[j] = np.sum(confusion, axis = 0)[j] - tp[j]
-            f1[j] = float(2*tp[j])/float(2*tp[j] + fn[j] +fp[j])
-        print f1
-        return np.average(f1[1:])
 
